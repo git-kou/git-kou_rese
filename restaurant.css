@@ -1,0 +1,567 @@
+body {
+    min-width:1000px;
+    background-color:#fffacd;
+    margin:0;
+}
+
+li {
+    list-style: none;
+}
+
+li:hover {
+    transform: translateY(-2px);
+}
+
+ul {
+    padding-left:0;
+}
+
+header h1,footer h1 {
+    font-family:"Comic Sans MS";
+    color:#dc143c;
+}
+
+a {
+    text-decoration: none;
+    color:#dc143c;
+    font-size:20px;
+    font-weight:600;
+    font-family:"Comic Sans MS";
+}
+
+.wrapper {
+    width:900px;
+    margin:0 auto;
+}
+
+header {
+    background-color:#ffd700;
+}
+
+.header {
+    width:900px;
+    margin:0 auto;
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.header-logo h1 {
+    font-size:40px;
+    text-align: center;
+}
+
+.header-list-flex {
+    display:flex;
+}
+
+.header-list li {
+    font-size: 15px;
+    margin-right:20px;
+}
+
+.han {
+    background-color:#ffd700;
+    position:fixed;
+    z-index:999;
+    padding:20px 10px;
+    top:0;
+    right:0;
+    cursor: pointer;
+}
+
+.han span {
+    width: 50px;
+    height: 4px;
+    background-color: #dc143c;
+    position: relative;
+    transition: ease.1s;
+    display: block;
+    border-radius:10px;
+  }
+  
+  .han span:nth-child(1) {
+    top: 0;
+  }
+  
+  .han span:nth-child(2) {
+    margin: 10px 0;
+  }
+  
+  .han span:nth-child(3) {
+    top: 0;
+  }
+  
+  
+  /* ハンバーガーメニュークリック後のスタイル */
+  .han.active {
+    transform: translateX(0);
+  }
+  
+  .han.active span:nth-child(1) {
+    top: 14px;
+    transform: rotate(45deg);
+  }
+  
+  .han.active span:nth-child(2) {
+    opacity: 0;
+  
+  }
+  
+  .han.active span:nth-child(3) {
+    top: -14px;
+    transform: rotate(-45deg);
+  }
+
+@media(min-width:600px) {
+    .han {
+        display:none;
+    }
+}
+
+.media-list {
+    background-color:#ffd700;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:998;
+    display:none;
+}
+
+.media-list ul {
+    margin:72px 0 0 0;
+    text-align:center;
+}
+
+.media-list a {
+    padding:10px 0;
+    display:block;
+}
+
+.media-list li {
+    border-top:1px solid white;
+}
+
+.media-list li:hover {
+    border-bottom:none;
+}
+
+.back {
+    position:relative;
+    height:550px;
+    overflow: hidden;
+}
+
+.back img {
+    width:100%;
+    height:550px;
+}
+
+.bg {
+    position:absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    opacity:0;
+    animation-name:fade;
+    animation-duration: 25s;
+    animation-iteration-count:infinite;
+}
+
+.back2 {
+    animation-delay:5s;
+}
+
+.back3 {
+    animation-delay:10s;
+}
+
+.back4 {
+    animation-delay:15s;
+}
+
+.back5 {
+    animation-delay:20s;
+}
+
+@keyframes fade {
+    0% { opacity: 0; }
+    5% { opacity: 1; }
+   25% { opacity: 1; }
+   30% { opacity: 0; }
+  100% { opacity: 0; }
+ }
+
+#menu h1,#Access h1 {
+    font-size:50px;
+    font-family:"Comic Sans MS";
+    color:#ff8c00;
+}
+
+#menu {
+    padding-top:30px;
+    padding-bottom:30px;
+}
+
+#keeper {
+    padding-top:30px;
+    padding-bottom:60px;
+}
+
+#Access {
+    padding-top:30px;
+    padding-bottom:60px;
+}
+
+.top {
+    text-align:center;
+}
+
+.menu-flex {
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-flex a {
+    margin:30px 0;
+}
+
+.menu-box {
+    background-color:#ffffe0;
+    color:black;
+    text-align:center;
+    box-shadow: 0 10px 10px 0;
+}
+
+.menu-box {
+    opacity: 0;
+    transform: translateY(5px);
+}
+
+.scroll {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1.5s;
+}
+
+.menu-box:hover {
+    box-shadow:0 0 0 0;
+    transform: translateX(3px) translateY(3px);
+    transition: 0.5s;
+}
+
+.menu-box p {
+    padding-bottom:20px;
+}
+
+.scr {
+    transform: translateX(-100%);
+}
+
+#keeper {
+    background-color:#ff7f50;
+    color:white;
+}
+
+.scroll_2 {
+    transform: translateX(0%);
+    transition: 1s;
+}
+
+#keeper h1 {
+    font-size:50px;
+    font-family:"Comic Sans MS";
+    color:white;
+}
+
+.keeper-flex {
+    display:flex;
+    justify-content: space-between;
+}
+
+.keeper-text {
+    margin-left:40px;
+}
+
+.scr_2 {
+    transform: translateX(100%);
+}
+
+.scroll_3 {
+    transform: translateX(0%);
+    transition: 1s;
+}
+
+.access-flex {
+    display:flex;
+    justify-content: space-between;
+}
+
+iframe {
+    width:50%;
+}
+
+.posi {
+    position:relative;
+}
+
+footer {
+    background-color:#ffd700;
+    position:absolute;
+    left:0;
+    right:0;
+}
+
+.footer {
+    width:900px;
+    margin:0 auto;
+}
+
+.footer h1 {
+    text-align:center;
+    font-size:40px;
+    padding-top:30px;
+}
+
+.footer-list-flex {
+    display:flex;
+    justify-content: center;
+    font-size:15px;
+}
+
+.footer-list-flex li {
+    margin:20px;
+}
+
+.footer-logo {
+    color:black;
+    text-align:center;
+    font-size:80%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom:20px;
+}
+
+/*採用ページ*/
+
+#senden {
+    width:900px;
+    margin:auto;
+    padding:50px 0;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#senden h1 {
+    font-size:50px;
+    color:#dc143c;
+}
+
+#senden img {
+    width:400px;
+    height:270px;
+}
+
+#saiyou {
+    width:900px;
+    margin:0 auto;
+    padding:30px 0 60px 0;
+}
+
+#saiyou h1 {
+    font-size: 40px;
+    text-align:center;
+}
+
+#saiyou h2 {
+    margin-top:60px;
+    text-align:center;
+}
+
+dl {
+    margin-top:30px;
+}
+
+dt {
+    border-left:4px solid #dc143c;
+    padding-left:5px;
+}
+
+.dd-left {
+    margin-left:-30px;
+}
+
+#form {
+    padding:20px 0 60px 0;
+    width:900px;
+    margin:0 auto;
+}
+
+#form h1 {
+    font-size:40px;
+    text-align:center;
+}
+
+form {
+    width:fit-content;
+    margin:auto;
+}
+
+form p {
+    margin-bottom:20px;
+}
+
+.name {
+    width:200px;
+}
+
+.year {
+    width:60px;
+}
+
+.month {
+    width:40px;
+    height:22px;
+}
+
+.day {
+    width:40px;
+}
+
+.keitai {
+    width:140px;
+    height:22px;
+}
+
+.renraku {
+    width:300px;
+}
+
+form p:last-child {
+    text-align:center;
+}
+
+.btn {
+    width:100px;
+    height:33px;
+    background-color:#ffd700;
+    color:#dc143c;
+    font-size:20px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #dc143c;
+    color:#ffd700;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/*採用ページここまで*/
+
+
+@media(max-width:600px) {
+    body {
+        min-width:initial;
+    }
+
+    li:hover {
+        transform: initial;
+        background-color:#dc143c;
+        transition: 0.5s;
+    }
+
+    a:hover {
+        color:#ffd700;
+        transition: 0.5s;
+    }
+
+    .wrapper {
+        width:90%;
+    }
+
+    .header {
+        width:initial;
+        margin:initial;
+        flex-direction: column;
+    }
+
+    .header-list {
+        display:none;
+    }
+
+    .back {
+        height:60vw;
+    }
+
+    .back img {
+        height:60vw;
+    }
+
+    .keeper-flex {
+        flex-direction: column;
+    }
+
+    .keeper-img {
+        text-align:center;
+    }
+
+    .keeper-text {
+        margin-left:0;
+    }
+
+    .keeper-text h2,.cen {
+        text-align:center;
+    }
+
+    .access-flex {
+        flex-direction: column;
+    }
+
+    iframe {
+        width:100%;
+    }
+
+    .footer {
+        width:initial;
+    }
+
+    .footer ul {
+        display:none;
+    }
+
+    /*採用ページ*/
+
+    #senden {
+        width:95%;
+        flex-direction: column;
+    }
+
+    #senden h1 {
+        font-size:10vw;
+    }
+
+    #senden img {
+        width:100%;
+        height:initial;
+    }
+
+    #saiyou {
+        width:95%;
+    }
+
+    #form {
+        width:95%;
+    }
+
+    .name {
+        width:60vw;
+    }
+
+    .renraku {
+        width:80vw;
+    }
+}

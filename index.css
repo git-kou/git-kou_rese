@@ -286,7 +286,11 @@ header {
     justify-content: space-between;
 }
 
+.keeper-img {
+    width:40%;
+
 .keeper-text {
+    width:60%;
     margin-left:40px;
 }
 
@@ -514,10 +518,12 @@ form p:last-child {
     }
 
     .keeper-img {
+        width:initial;
         text-align:center;
     }
 
     .keeper-text {
+        width:initial;
         margin-left:0;
     }
 

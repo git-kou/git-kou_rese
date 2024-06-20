@@ -17,7 +17,8 @@ $(function() {
 			var win_a = $(window).height();
 			if (scr_a > pos_a - win_a + 100){
 				$(this).addClass('scroll');
-			}
+			}else{
+				$(this).removeClass('scroll');
 		});
 	});
 
@@ -28,7 +29,8 @@ $(function() {
 			var win_b = $(window).height();
 			if (scr_b > pos_b - win_b + 100){
 				$(this).addClass('scroll_2');
-			}
+			}else{
+				$(this).removeClass('scroll_2');
 		});
 	});
 
@@ -39,7 +41,8 @@ $(function() {
 			var win_c = $(window).height();
 			if (scr_c > pos_c - win_c + 100){
 				$(this).addClass('scroll_3');
-			}
+			}else{
+				$(this).removeClass('scroll_3');
 		});
 	});
 });

@@ -19,6 +19,7 @@ $(function() {
 				$(this).addClass('scroll');
 			}else{
 				$(this).removeClass('scroll');
+			}
 		});
 	});
 
@@ -31,6 +32,7 @@ $(function() {
 				$(this).addClass('scroll_2');
 			}else{
 				$(this).removeClass('scroll_2');
+			}
 		});
 	});
 
@@ -43,6 +45,7 @@ $(function() {
 				$(this).addClass('scroll_3');
 			}else{
 				$(this).removeClass('scroll_3');
+			}
 		});
 	});
 });

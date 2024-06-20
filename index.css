@@ -323,9 +323,6 @@ iframe {
 
 footer {
     background-color:#ffd700;
-    position:absolute;
-    left:0;
-    right:0;
 }
 
 .footer {
@@ -350,6 +347,7 @@ footer {
 }
 
 .footer-logo {
+    margin:0;
     color:black;
     text-align:center;
     font-size:80%;

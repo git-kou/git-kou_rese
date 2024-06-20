@@ -243,6 +243,7 @@ header {
 .menu-box {
     opacity: 0;
     transform: translateY(5px);
+    transition:1.5s;
 }
 
 .scroll {
@@ -263,6 +264,7 @@ header {
 
 .scr {
     transform: translateX(-100%);
+    transition: 1s;
 }
 
 #keeper {
@@ -297,6 +299,7 @@ header {
 
 .scr_2 {
     transform: translateX(100%);
+    transition: 1s;
 }
 
 .scroll_3 {

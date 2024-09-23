@@ -237,13 +237,12 @@ header {
     background-color:#ffffe0;
     color:black;
     text-align:center;
-    box-shadow: 0 10px 10px 0;
+    box-shadow: 0 7px 7px 0;
 }
 
 .menu-box {
     opacity: 0;
     transform: translateY(5px);
-    transition:1.5s;
 }
 
 .scroll {
@@ -255,7 +254,7 @@ header {
 .menu-box:hover {
     box-shadow:0 0 0 0;
     transform: translateX(3px) translateY(3px);
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .menu-box p {
@@ -264,7 +263,6 @@ header {
 
 .scr {
     transform: translateX(-100%);
-    transition: 1s;
 }
 
 #keeper {
@@ -299,7 +297,7 @@ header {
 
 .scr_2 {
     transform: translateX(100%);
-    transition: 1s;
+    overflow-x: hidden;
 }
 
 .scroll_3 {
@@ -308,7 +306,7 @@ header {
 }
 
 .flow {
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 .access-flex {
@@ -519,7 +517,7 @@ form p:last-child {
         flex-direction: column;
     }
 
-   .keeper-img {
+    .keeper-img {
         width:initial;
         text-align:center;
     }

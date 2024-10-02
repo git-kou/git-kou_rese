@@ -17,6 +17,11 @@ $(function() {
         };
     });
 
+	$('.bg:not(:first-child)').hide();
+	setInterval(function() {
+		$('.bg:first-child').fadeOut('slow').next('.bg').fadeIn('slow').end().appendTo(".back");
+	},5000);
+
     $(window).scroll(function(){
 		$('.menu-box').each(function(){
 			var pos_a = $(this).offset().top;
